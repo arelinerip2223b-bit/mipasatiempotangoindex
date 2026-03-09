@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasión Musical - COBAT 22</title>
+    <style>
+               body {
+            background-color: #121212; 
+            color: #FFFFFF;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(transparent, rgba(0,0,0,0.5)), #1DB954;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 { margin: 0; font-size: 2.5rem; }
+
+        .welcome-box {
+            max-width: 800px;
+            margin: 20px auto;
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            background-color: #181818;
+            margin-bottom: 40px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        .photos-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .photo-entry {
+            text-align: center;
+            flex: 1;
+            min-width: 250px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%; 
+            border: 3px solid #1DB954;
+            margin-bottom: 10px;
+        }
+
+        .genre-img {
+            border-radius: 10px;  
+       }
+
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th {
+            text-align: left;
+            color: #b3b3b3;
+            border-bottom: 1px solid #282828;
+            padding: 12px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #282828;
+        }
+
+        tr:hover { background-color: #282828; }
+
+        .video-wrapper {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        iframe { border-radius: 10px; border: none; }
+
+        /* Pie de página semántico [5] */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #b3b3b3;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Estructura Semántica: Header [5] -->
+    <header>
+        <h1>Mi Pasatiempo: La Música</h1>
+        <div class="welcome-box">
+            <p>Este espacio está dedicado a compartir nuestra pasión por la música. Como alumnos de la clase de TIC's en el COBAT Plantel 22, este proyecto nos permite unir la programación con nuestros pasatiempos favoritos.</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECCIÓN 1: HUAPANGO HUASTECO -->
+        <section>
+            <div class="photos-container">
+                <div class="photo-entry">
+                    <!-- Foto de la Persona (Areli) -->
+                    <img src="Areli.jpg" alt="Foto de Areli Neri">
+                    <h3>Areli Neri</h3>
+                </div>
+                <div class="photo-entry">
+                    <!-- Foto del Género -->
+                    <img src="Huapango.jpg" alt="Representación del Huapango Huasteco" class="genre-img">
+                    <h3>Huapango Huasteco</h3>
+                </div>
+            </div>
+            
+            <p><strong>Descripción:</strong> El Huapango Huasteco es una expresión musical llena de tradición de la región Huasteca. Se distingue por el virtuosismo del violín y el zapateado rítmico, reflejando la identidad cultural de Tamaulipas.</p>
+
+            <!-- 2. Tabla de Canciones: Huapango [11, 12] -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Trío</th>
+                        <th>Canción</th>
+                        <th>Año</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Trío Aurora Hidalguense</td><td>La Rosa</td><td>2022</td></tr>
+                    <tr><td>2</td><td>Trío Mujeres Tamaulipecas</td><td>Bendición Huasteca</td><td>2025</td></tr>
+                    <tr><td>3</td><td>Trío Mujeres Tamaulipecas</td><td>La Perla Tamaulipeca</td><td>2025</td></tr>
+                    <tr><td>4</td><td>Trío Los Hidalguenses</td><td>El Rey de la Huasteca</td><td>2019</td></tr>
+                    <tr><td>5</td><td>Los Malagueña</td><td>Flores Negras</td><td>2023</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SECCIÓN 2: CORRIDOS TUMBADOS -->
+        <section>
+            <div class="photos-container">
+                <div class="photo-entry">
+                    <!-- Foto de la otra Persona -->
+                    <img src="Erick.jpg" alt="Foto de Erick Urbano">
+                    <h3>Erick Urbano</h3>
+                </div>
+                <div class="photo-entry">
+                    <!-- Foto del Género -->
+                    <img src="Tumbados.jpg" alt="Iconografía de Corridos Tumbados" class="genre-img">
+                    <h3>Corridos Tumbados</h3>
+                </div>
+            </div>
+
+            <p><strong>Descripción:</strong> Los Corridos Tumbados son un subgénero moderno de la música regional mexicana que mezcla el sonido tradicional de los corridos con influencias del trap y hip-hop, muy popular entre la juventud actual.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Artista</th>
+                        <th>Canción</th>
+                        <th>Año</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Natanael Cano</td><td>Amor Tumbado</td><td>2019</td></tr>
+                    <tr><td>2</td><td>Junior H</td><td>Ella</td><td>2020</td></tr>
+                    <tr><td>3</td><td>Fuerza Regida</td><td>Sigo Chambeando</td><td>2018</td></tr>
+                    <tr><td>4</td><td>Peso Pluma</td><td>Ella Baila Sola</td><td>2023</td></tr>
+                    <tr><td>5</td><td>Ovi</td><td>Vengo de Nada</td><td>2020</td></tr>
+                </tbody>
+            </table>
+        </section>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TB5eqVtNenE?si=mKoHVOF3B0yGBb41&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- Pie de página con información institucional [5] -->
+    <footer>
+        <p>&copy; 2026 Areli Neri y Erick Urbano Pareja Tango| Capacitación en Informática | COBAT Plantel 22 Reynosa</p>
+    </footer>
+
+</body>
+</html>
